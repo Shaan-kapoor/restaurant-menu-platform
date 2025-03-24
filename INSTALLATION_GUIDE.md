@@ -58,8 +58,10 @@ Finally, instead of using Firebase Storage (which requires a paid plan), we'll u
 
 ## Step 3: Create a GitHub Repository from Our Template
 
-1. Go to our template repository (link will be provided separately)
-2. Click the "Use this template" button
+1. Go to our template repository at: https://github.com/yourusername/restaurant-menu-platform
+   (Create this repository on GitHub using your GitHub account and upload the code we've developed)
+
+2. Click the "Use this template" button at the top of the repository page
 3. Click "Create a new repository"
 4. Give your repository a name (e.g., "my-restaurant-website")
 5. Make it "Public"

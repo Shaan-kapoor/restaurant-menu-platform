@@ -1,69 +1,42 @@
-# Restaurant Menu & Ordering Platform
+# Restaurant Menu Platform
 
-A simple restaurant menu platform with customer rewards, designed for non-technical restaurant owners.
+A complete solution for restaurants to showcase their menus and enable online ordering. Built with Next.js, React, and Firebase.
 
-## Documentation Index
+## Features
 
-### Core Documents
-1. [Requirements Document](requirements.md) - Comprehensive overview of project requirements
-2. [Implementation Guide](implementation_guide.md) - Step-by-step instructions for setting up the platform
-3. [Technology Choices](tech_stack.md) - Explanation of technologies used in non-technical terms
-4. [Cost Estimate](cost_estimate.md) - Estimated costs for setup and operation
+- Mobile-responsive design
+- User authentication and profiles
+- Restaurant management dashboard
+- Menu management
+- Order processing
+- Customer reward system
 
-### Technical References
-1. [Data Schema](data_schema.md) - How data is organized in the database
+## Free to Use and Deploy
 
-## Project Overview
-
-This platform helps restaurant owners:
-- Showcase their menu items online
-- Accept and manage orders from customers
-- Implement a loyalty program to reward repeat customers
-- All with minimal technical knowledge required
-
-## Key Features
-
-### For Restaurant Owners
-- Easy onboarding with minimal information
-- Simple menu management
-- Order tracking and management
-- Customer data insights
-
-### For Customers
-- Browse local restaurants
-- View menus and place orders
-- Earn rewards for repeat orders
-- Track order status
-
-## Technology Summary
-
-- **Frontend**: Next.js with Tailwind CSS
-- **Backend**: Firebase (Authentication, Database, Storage, Hosting)
-- **Deployment**: Vercel
+This platform uses only free services:
+- Firebase (Authentication & Firestore)
+- External image hosting (Imgur, ImgBB, etc.)
+- Vercel for deployment
+- No paid plans required!
 
 ## Getting Started
 
-To start implementing this platform, follow these steps:
+### For Restaurant Owners
 
-1. Read the [Requirements Document](requirements.md) to understand the project scope
-2. Review the [Cost Estimate](cost_estimate.md) to understand potential expenses
-3. Follow the [Implementation Guide](implementation_guide.md) for step-by-step setup instructions
+If you're a restaurant owner looking to set up your own menu website, follow our [Installation Guide](INSTALLATION_GUIDE.md).
 
-## Support
+### For Developers
 
-For assistance with implementation, you can:
-- Hire a developer for initial setup
-- Use the Firebase and Vercel documentation
-- Join online communities focused on these technologies
+If you're a developer working on this project, check out the [Developer README](DEVELOPER_README.md).
 
-## Next Steps
+## Live Demo
 
-After initial setup, consider these enhancements:
-- Integration with delivery services
-- Mobile app development
-- Advanced analytics
-- Marketing automation
+See the platform in action: [Demo Link](https://restaurant-menu-platform-demo.vercel.app/)
 
----
+## License
 
-*This platform is designed to be accessible for non-technical restaurant owners while providing a professional customer experience.* 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Created By
+
+[Your Name/Company] - Feel free to reach out with questions or feedback! 
