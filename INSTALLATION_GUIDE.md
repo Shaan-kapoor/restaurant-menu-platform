@@ -56,16 +56,24 @@ Finally, instead of using Firebase Storage (which requires a paid plan), we'll u
 4. Click "Register app"
 5. You'll see a code snippet with `firebaseConfig` - keep this page open, you'll need these values later
 
-## Step 3: Create a GitHub Repository from Our Template
+## Step 3: Create a GitHub Repository from Our Code
 
-1. Go to our template repository at: https://github.com/yourusername/restaurant-menu-platform
-   (Create this repository on GitHub using your GitHub account and upload the code we've developed)
+You have two options to get the code:
 
+### Option 1: Clone from our template repository (recommended)
+
+1. Go to our template repository at: https://github.com/Shaan-kapoor/restaurant-menu-platform
+   (This is the repository where we've uploaded the complete code)
 2. Click the "Use this template" button at the top of the repository page
 3. Click "Create a new repository"
 4. Give your repository a name (e.g., "my-restaurant-website")
-5. Make it "Public"
-6. Click "Create repository from template"
+
+### Option 2: Download the code directly
+
+1. Visit our website at: [Website URL] to download the code as a ZIP file
+2. Extract the ZIP file to your computer
+3. Create an empty GitHub repository
+4. Upload the code to your GitHub repository following GitHub's instructions
 
 ## Step 4: Connect to Vercel for Deployment
 

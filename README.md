@@ -29,14 +29,17 @@ If you're a restaurant owner looking to set up your own menu website, follow our
 
 If you're a developer working on this project, check out the [Developer README](DEVELOPER_README.md).
 
-## Live Demo
+## Make It a Template Repository
 
-See the platform in action: [Demo Link](https://restaurant-menu-platform-demo.vercel.app/)
+To make this a template repository that others can use:
+1. Go to the repository settings
+2. Scroll down to the "Template repository" section 
+3. Check the box to enable template repository
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Created By
 
-[Your Name/Company] - Feel free to reach out with questions or feedback! 
+Original implementation by Shaan Kapoor. Feel free to reach out with questions or feedback! 

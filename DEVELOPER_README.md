@@ -117,6 +117,17 @@ Firebase security rules are crucial for this application. Basic rules are:
 - Orders are readable by the restaurant owner and the user who placed them
 - Public data (restaurant listings, menus) is readable by everyone
 
+## Creating a Template Repository
+
+If you're a developer who wants to share this project as a template for others:
+
+1. Set up your GitHub repository with all the code
+2. Go to your repository's settings
+3. Scroll down to the "Template repository" section
+4. Check the box to make it a template repository
+5. Update the INSTALLATION_GUIDE.md with your repository URL
+6. Users can now create their own repositories from your template with one click
+
 ## Resources
 
 - [Next.js Documentation](https://nextjs.org/docs)
