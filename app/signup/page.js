@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '../../lib/auth-context';
-import PageLayout from '../../components/PageLayout';
+import PageLayout from '../../components/PageLayout.jsx';
 
 export default function Signup() {
   const router = useRouter();

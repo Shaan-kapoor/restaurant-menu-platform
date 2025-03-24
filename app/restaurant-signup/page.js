@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useAuth } from '../../lib/auth-context';
 import { db } from '../../lib/firebase';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
-import PageLayout from '../../components/PageLayout';
+import PageLayout from '../../components/PageLayout.jsx';
 
 export default function RestaurantSignup() {
   const router = useRouter();

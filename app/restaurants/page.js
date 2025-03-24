@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { db } from '../../lib/firebase';
 import { collection, getDocs } from 'firebase/firestore';
-import PageLayout from '../../components/PageLayout';
+import PageLayout from '../../components/PageLayout.jsx';
 import { MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/24/outline';
 
 export default function Restaurants() {

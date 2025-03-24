@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useAuth } from '../../lib/auth-context';
 import { db } from '../../lib/firebase';
 import { doc, getDoc, collection, query, getDocs, where, orderBy } from 'firebase/firestore';
-import PageLayout from '../../components/PageLayout';
+import PageLayout from '../../components/PageLayout.jsx';
 import Link from 'next/link';
 
 export default function Dashboard() {

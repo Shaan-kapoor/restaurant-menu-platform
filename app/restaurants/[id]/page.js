@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { db } from '../../../lib/firebase';
 import { doc, getDoc, collection, query, getDocs } from 'firebase/firestore';
-import PageLayout from '../../../components/PageLayout';
+import PageLayout from '../../../components/PageLayout.jsx';
 import { MapPinIcon, PhoneIcon, ClockIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 
 export default function RestaurantDetails() {
