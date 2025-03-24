@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false, // Disable strict mode for static export
   output: 'export',
+  trailingSlash: true,
   images: {
     domains: [
       'i.imgur.com',         // Imgur
@@ -13,6 +14,12 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
+  // Add environment variables to be available during build
+  env: {
+    NEXT_PUBLIC_STATIC_EXPORT: 'true',
+  },
+  // Transpile certain packages during static export
+  transpilePackages: ['firebase'],
 };
 
 module.exports = nextConfig; 
