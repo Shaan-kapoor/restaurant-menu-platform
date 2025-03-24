@@ -85,12 +85,19 @@ You have two options to get the code:
    - `NEXT_PUBLIC_FIREBASE_API_KEY` = (your apiKey value)
    - `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` = (your authDomain value)
    - `NEXT_PUBLIC_FIREBASE_PROJECT_ID` = (your projectId value)
-   - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` = (your storageBucket value)
    - `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` = (your messagingSenderId value)
    - `NEXT_PUBLIC_FIREBASE_APP_ID` = (your appId value)
    - `NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID` = (your measurementId value if available)
-6. Click "Deploy"
-7. Wait for the deployment to complete (this may take a few minutes)
+6. In the "Build and Output Settings" section, click "Override":
+   - Set "Build Command" to: `next build`
+   - Set "Output Directory" to: `out`
+7. Click "Deploy"
+8. Wait for the deployment to complete (this may take a few minutes)
+
+**Note:** If you encounter build errors related to authentication, you may need to set the following environment variable:
+- `NEXT_PUBLIC_DEPLOYMENT_MODE` = `static`
+
+This tells the application to handle authentication only on the client side.
 
 ## Step 5: Access Your New Website
 
@@ -117,6 +124,33 @@ You have two options to get the code:
 If you encounter any issues during setup:
 - Check our FAQ section (link will be provided separately)
 - Email support at (support email will be provided separately)
+
+## Troubleshooting
+
+### Deployment Errors
+
+If you encounter errors during deployment related to authentication, try these solutions:
+
+1. In Vercel, make sure you've correctly set all the environment variables from Step 4.
+2. Check that your Firebase project has Authentication enabled with Email/Password provider.
+3. If you see "Cannot destructure property" errors in the Vercel logs:
+   - Go to the Build and Development Settings in your Vercel project
+   - Set the Output Directory to `out`
+   - This ensures Vercel treats the project as a static export
+
+### Authentication Issues
+
+If users can't sign in or sign up:
+1. Verify your Firebase configuration variables are correct
+2. Ensure Authentication is enabled in Firebase Console
+3. Check the browser console for any error messages
+
+### Image Upload Problems
+
+If you're having trouble with images:
+1. Make sure you're using a supported image hosting service like Imgur or ImgBB
+2. Verify the image URL begins with https:// 
+3. Check that the image format is supported (JPG, PNG, WebP)
 
 ## Optional: Custom Domain
 

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
   images: {
     domains: [
       'i.imgur.com',         // Imgur
@@ -10,6 +11,7 @@ const nextConfig = {
       'images.unsplash.com', // Unsplash
       'placehold.co'         // Placeholder service
     ],
+    unoptimized: true,
   },
 };
 

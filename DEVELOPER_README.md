@@ -108,6 +108,33 @@ The application is configured for deployment to Vercel:
 2. Set environment variables in the Vercel dashboard
 3. Deploy the application
 
+### Static Export Configuration
+
+This project is configured to use Next.js static export (`next export`) for maximum compatibility with hosting providers. This means:
+
+1. All dynamic functionality happens client-side only
+2. Authentication is only processed in the browser
+3. No server-side rendering or API routes
+4. The `next.config.js` includes:
+   ```js
+   {
+     output: 'export',
+     images: {
+       unoptimized: true
+     }
+   }
+   ```
+
+This approach has several benefits:
+- Can be hosted anywhere that serves static files
+- No server-side processing required
+- Better compatibility with free tiers of hosting providers
+
+The trade-off is that all data fetching and authentication must happen client-side. The code is structured to handle this by:
+1. Using client components
+2. Including safeguards in the auth context
+3. Adding client-side checks to prevent SSR issues
+
 ## Security Rules
 
 Firebase security rules are crucial for this application. Basic rules are:

@@ -19,6 +19,18 @@ This platform uses only free services:
 - Vercel for deployment
 - No paid plans required!
 
+## Static Export for Easy Deployment
+
+This project is configured for static export (using `next export`), making it easy to deploy to various hosting services including Vercel, Netlify, GitHub Pages, or any static file hosting.
+
+### Deployment on Vercel
+
+For the easiest deployment experience:
+1. Fork this repository on GitHub
+2. Connect to Vercel
+3. Set your Firebase environment variables
+4. Vercel will automatically detect the Next.js project and deploy it
+
 ## Getting Started
 
 ### For Restaurant Owners
