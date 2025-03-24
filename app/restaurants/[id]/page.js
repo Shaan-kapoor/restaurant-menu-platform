@@ -7,21 +7,6 @@ import { doc, getDoc, collection, query, getDocs } from 'firebase/firestore';
 import PageLayout from '../../../components/PageLayout';
 import { MapPinIcon, PhoneIcon, ClockIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 
-// This is needed for static export with dynamic routes
-// In a real app, you'd fetch this data from your API/database 
-// For static export, we'll use dummy IDs for demonstration
-export async function generateStaticParams() {
-  // Provide some dummy restaurant IDs for static generation
-  // This allows Next.js to pre-render these pages at build time
-  return [
-    { id: 'restaurant1' },
-    { id: 'restaurant2' },
-    { id: 'restaurant3' },
-    { id: 'sample-restaurant' },
-    { id: 'demo-restaurant' },
-  ];
-}
-
 export default function RestaurantDetails() {
   const { id } = useParams();
   const router = useRouter();
