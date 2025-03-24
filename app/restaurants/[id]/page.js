@@ -7,6 +7,21 @@ import { doc, getDoc, collection, query, getDocs } from 'firebase/firestore';
 import PageLayout from '../../../components/PageLayout';
 import { MapPinIcon, PhoneIcon, ClockIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 
+// This is needed for static export with dynamic routes
+// In a real app, you'd fetch this data from your API/database 
+// For static export, we'll use dummy IDs for demonstration
+export async function generateStaticParams() {
+  // Provide some dummy restaurant IDs for static generation
+  // This allows Next.js to pre-render these pages at build time
+  return [
+    { id: 'restaurant1' },
+    { id: 'restaurant2' },
+    { id: 'restaurant3' },
+    { id: 'sample-restaurant' },
+    { id: 'demo-restaurant' },
+  ];
+}
+
 export default function RestaurantDetails() {
   const { id } = useParams();
   const router = useRouter();
@@ -18,8 +33,11 @@ export default function RestaurantDetails() {
   const [error, setError] = useState(null);
   const [activeCategory, setActiveCategory] = useState('all');
   const [cart, setCart] = useState([]);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+    
     async function fetchRestaurantAndMenu() {
       try {
         // Fetch restaurant details
@@ -61,10 +79,10 @@ export default function RestaurantDetails() {
       }
     }
     
-    if (id) {
+    if (id && isClient) {
       fetchRestaurantAndMenu();
     }
-  }, [id]);
+  }, [id, isClient]);
 
   const handleAddToCart = (item) => {
     setCart(prevCart => {
@@ -100,6 +118,17 @@ export default function RestaurantDetails() {
       return `${day.charAt(0).toUpperCase() + day.slice(1)}: Closed`;
     });
   };
+
+  // Don't render on server - only client
+  if (!isClient) {
+    return (
+      <PageLayout>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex justify-center">
+          <div className="spinner animate-spin h-12 w-12 border-t-4 border-primary-500 border-solid rounded-full"></div>
+        </div>
+      </PageLayout>
+    );
+  }
 
   if (loading) {
     return (
